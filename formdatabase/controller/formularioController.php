@@ -19,16 +19,16 @@ class formularioController{
         $email = $_REQUEST['email'];
         $user = $_REQUEST['user'];
         $password = $_REQUEST['password'];
+        $password = hash('sha512',$password);
         $data = "'".$name."','".$lastname."','".$phone."','".$adress."','".$email."','".$user."','".$password."'";
         $users = new Formulario();
         $dato = $users->insertar("users",$data);
-        
-        header("location:http://localhost/formdatabase/");
+        echo '<script>
+        alert("Usuario registrado con éxito.");
+        window.location = "http://localhost/formdatabase";
+  </script>      
+';
+
     }
-
-
-
-   
-
 
 }

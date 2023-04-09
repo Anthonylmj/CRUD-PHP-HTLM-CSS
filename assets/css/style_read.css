@@ -1,0 +1,83 @@
+#users {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: separate;
+    width: 100%;
+}
+
+#users td,
+#users th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#users tr:nth-child(n) {
+    background-color: #dfdfdf;
+}
+
+#users tr:nth-child(-n+1) {
+    font-weight: bold;
+    font-size: medium;
+    background-color: #691b88;
+}
+
+#users tr:hover {
+    background-color: #2fbd76;
+}
+
+
+#users th {
+    
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.table_div {
+
+
+    margin-left: 140px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: table;
+    flex-direction: column;
+    height: auto;
+    width: 160vh;
+    max-width: 300vh;
+    max-height: 300vh;
+    background-color: #8a89899c;
+    position: relative;
+
+}
+
+.header{
+
+    margin: auto;
+    height: 10vh;
+    width: 100%;
+    background-color: #817c83a2;
+
+}
+
+.button_back {
+    
+    border-color: #000000;
+    border-style: dashed;
+    margin-top: -40px; 
+    margin-left: 1px;
+    padding: 25px 30px;
+    background: #691b88;
+    color: rgb(0, 0, 0);
+    border-radius: 70px;
+    font-family: "Fantasy", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    cursor: grab;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+
+}
+
+
